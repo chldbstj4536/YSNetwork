@@ -15,3 +15,8 @@ target_include_directories(ysNetworkTest
     PUBLIC ${CMAKE_INSTALL_PREFIX}/inc)
 target_link_libraries(ysNetworkTest
     PUBLIC ${CMAKE_INSTALL_PREFIX}/lib/YSNetwork/ysNetwork.lib)
+
+# VS에서 시작프로젝트 설정
+if(MSVC)
+    set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT YSMathTest)
+endif()

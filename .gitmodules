@@ -1,0 +1,3 @@
+[submodule "submodules/YSEvent"]
+	path = submodules/YSEvent
+	url = https://github.com/chldbstj4536/YSEvent.git
